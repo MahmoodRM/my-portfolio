@@ -1,3 +1,4 @@
+/* Universal */
 * {
     font-size: 100%;
 }
@@ -24,39 +25,45 @@ h1 {
 
 }
 
-.navbar {
+.navbar{
     text-align: right;
 }
 
-.navlink {
+.navbar > li {
     font-size: 80%;
     display: inline;
 }
 
-.navlink a{
+.navbar li > a{
     color: aliceblue;
     text-decoration: none;
 }
 
+/* webpages separated */
+
+.Webpage {
+    min-height: 100vh;
+}
+
 
 /* About me section  */
-#divbox {
+#aboutme {
     margin:5%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
-#aboutmelink{
+.mybio{
    width: 50%;
 }
 
-.aboutt > h2{
+.mybio > h2{
     margin-top: 20%;
 }
 
-.aboutt > h2,
-.aboutt > p {
+.mybio > h2,
+.mybio > p {
     display: block;
     text-align: center;
     margin: 1%;
@@ -69,8 +76,90 @@ h1 {
     float:left;
 }
 
+/* work section  */
+
+#work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#standout {
+    flex: 1.4 0;
+    width: 50%;
+}
+
+.heading {
+    padding: 20px;
+    width: 30%;
+    height: 40vh;
+    border-right: 2px solid black;
+}
+
+.project {
+    text-align: center;
+    margin: 1%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 30%;
+}
+
+.project > h3{
+    margin: 0;
+    padding: 20px;
+    background-color: #E7D2CC;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+.project a > img {
+    width: 100%;
+    margin: 0%;
+}
+
+.repolink { 
+    text-align: center;
+    background-color:#d1b9b2 ;
+    display: block;
+    color: rgb(185, 111, 192);
+    text-decoration: none;
+
+}
+
+
+/* footer */
+
+footer{
+    background-color: #787a7a;
+    border-top:3px solid #303131; ;
+}
+
+#contactme h2 {
+    color: #9da0a1;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info > li {
+    display: inline;
+}
+
+.info li > a {
+
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 90%;
+}
+
+/* Responsive Design */
+
 @media screen and (max-width:992px) {
-    #divbox {
+    #aboutme {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -79,80 +168,43 @@ h1 {
         order: 1;
         width: 100%;
     }
-    #aboutmelink {
+    .mybio{
         order: 2;
         width: 100%;
     }
+    .project{
+        width: 45%;
+    }
+
+    .heading{
+        width: 40%;
+    }
+    
 }
 
-/* work section  */
+@media screen and (max-width:768px) {
+    h1 {
+       text-align: center;
+    }
 
-#firstProject {
-    flex: 1.5 0;
-}
+    .navbar > li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.project h3{
-    margin: 0;
-    padding: 20px;
-    background-color: #E7D2CC;
-    text-align: center;
+    .heading {
+        font-size: larger;
+        text-align: center;
+    }
+   
+    .project{
+        width: 90%;
+    }
+    
+    .heading{
+        width: 90%;
+    }
 
-}
-
-.project > a {
-    text-align: center;
-}
-
-.pro1 {
-    width: 100%;
-}
-
-.addproj {
-    width: 100%;
-}
-
-.Work {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-
-}
-
-.project {
-    width: 100%;
-    height: 20%;
-    margin: 20px;
-    border: 1px solid black;
-    box-sizing: border-box;
-    flex: 1 0;
-
-}
-
-/* #firstProject {
-    flex: 3 0;
-} */
-
-/* contact me section */
-
-.info {
-    text-align: left;
-    list-style: none;
-}
-
-/* footer */
-
-footer{
-    text-align: center;
-    background-color: #787a7a;
-    border-top:3px solid #303131; ;
-}
-
-footer > p {
-    font-size: 50%;
-}
-
-/* webpages separated */
-
-.Webpage {
-    min-height: 100vh;
+   
 }
