@@ -7,60 +7,75 @@
     </head>
 
     <body>
+        <!-- header -->
         <header>
-            <h1>Mahmood Hamid</h1>
-            <nav>
-                <ul>
-                    <li a="#aboutMe">About Me</li>
-                    <li a="#work">Work</li>
-                    <li a="#contactMe">Contact Me</li>
-                </ul>
-            </nav> 
+         <h1>Mahmood Hamid</h1>
+         <ul class="navbar">
+            <li class="navlink">
+                <a href="#divbox">About Me</a>
+               </li>
+               <li class="navlink">
+                <a href="#worklink">Work</a>
+               </li>
+               <li class="navlink">
+                <a href="#contactMelink">Contact me</a>
+              </li>
+         </ul>
         </header>
+        
+        <!-- About me Section  -->
+        <div class="Webpage " id="divbox">
+            <img class="avatar" src="./Assets/Images/Sketch.jpg" >
+            <section id="aboutmelink" class="aboutt">
+                <h2>About Me</h2>
+                <p class="about">Bio: 
+                    A Web develeoper who strives to achieve a fine balance between creativity and functionality, I have a background in both Science and Digital Art which brings out a logical and creative approach to all my work. Always looking for opportunities to further develop my skills and take on thought-provoking and new challenges.
+                </p>
+            </section>
 
-    
-        <section class="temp1">
-            <img src="./Assets/Images/Sketch.jpg">
-            <h2>About Me</h2>
-            <p class="about">This is a paragraph about me</p>
-        </section>
+        </div>
+       
 
-    
-        <section class="Work">
+        <!-- Work section -->
+        <section id="worklink" class="Webpage Work">
+
             <h2>Work</h2>
+            
             <section class="project" id="firstProject">
                 <h3>Project 1</h3>
-                <img src="./Assets/Images/val.jpg">
-                <p>Link to repository</p>
+                <a href="https://www.google.com/"><img class="pro1" src="./Assets/Images/Project.jpg"></a>
+                <a href="https://github.com/MahmoodRM">Link to Repository</a>
             </section>
+
             <section class="project">
                 <h3>Project 2</h3>
-                <img src="PROJECT2IMAGE">
-                <p>Link to repository</p>
+                <a href="https://www.google.com/"><img class="addproj art" src="./Assets/Images/LaterProjects.jpg"></a>
+                <a href="https://github.com/MahmoodRM">Link to Repository</a>
             </section> 
+
             <section class="project">
                 <h3>Project 3</h3>
-                <img src="PROJECT3IMAGE">
-                <p>Link to repository</p>
+                <a href="https://www.google.com/"><img class="addproj art" src="./Assets/Images/LaterProjects.jpg"></a>
+                <a href="https://github.com/MahmoodRM">Link to Repository</a>
             </section>
+
             <section class="project">
                 <h3>Project 4</h3>
-                <img src ="PROJECT4IMAGE">
-                <p>Link to repository</p>
+                <a href="https://www.google.com/"><img class="addproj art" src ="./Assets/Images/LaterProjects.jpg"></a>
+                <a href="https://github.com/MahmoodRM">Link to Repository</a>
             </section>
-        </section>
 
-        <section>
+        </section>
+        
+        <!-- Footer -->
+        <footer id="contactMelink">
             <h2>Contact Me</h2>
-            <ul>
+            <ul class="info">
                 <li>Email Adress: Mahmoodhamid@hotmail.co.uk</li>
                 <li>Github link: https://github.com/MahmoodRM</li>
                 <li>Social Media </li>
             </ul>
-        </section>
 
-        <footer>
-            <p>footer message</p>
         </footer>
     </body>
 </html>
